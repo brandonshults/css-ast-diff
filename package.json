@@ -2,9 +2,9 @@
   "name": "css-ast-diff",
   "version": "1.0.5",
   "description": "Diffs CSS files by parsing into AST, sorting, and finding functional differences",
-  "main": "index.js",
+  "main": "./lib/css-ast-diff.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
   "bin": {
     "css-ast-diff": "./bin/index.js"
   },
-  "main": "./lib/css-ast-diff.js",
   "files": [
     "LICENSE",
     "README.md",
@@ -47,5 +46,9 @@
     "svn": "^0.2.0",
     "svn-interface": "^0.5.0",
     "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
   }
 }
